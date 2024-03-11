@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+.title {
+  @apply mb-4 font-bold;
+  @container (width >= 36rem) {
+    font-size: clamp(1rem, 2cqi + 0.1rem, 2rem);
+  }
+  @container (width < 36rem) {
+    font-size: clamp(1.5rem, 2cqi + 0.1rem, 2rem);
+  }
+}
